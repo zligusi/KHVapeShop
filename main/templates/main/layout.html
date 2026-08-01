@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="zloi_gus">
+    <meta name="description" content="KHVapeStoop - Vape shop ">
+    <meta name="keywords" content=" vape , vape shop , vape store , kharkov vape shop , bue  vape ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="">
+    <title>{% block title  %}{% endblock  %}</title>
+</head>
+<body>
+    <aside> 
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="{% url 'about' %}"><i class="fa-solid fa-circle-info"></i>About</a></li>
+                <li>
+                    <details>
+                        <summary><i class="fa-solid fa-address-book"></i>Contacts</summary>
+                        <ul>
+                            <li><a href="https://t.me/zloi_gus" target="_blank"><i class="fa-brands fa-telegram"></i>Telegram</a></li>
+                            <li><a href="" > <i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                            <li><a href="" > <i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                            <li><a href="" > <i class="fa-brands fa-twitter"></i>Twitter</a></li>
+                            <li><a href="" > <i class="fa-brands fa-discord"></i>Discord</a></li>
+                            <li><a href="" > <i class="fa-brands fa-github"></i>GitHub</a></li>
+                            <li><a href="" > <i class="fa-brands fa-viber"></i>Viber</a></li><br>
+                            <li><i class="fa-solid fa-phone"></i> +380 (97) XXX-XX-XX</li>
+                            <li><i class="fa-solid fa-phone"></i> +380 (73) XXX-XX-XX</li>
+                            <li><i class="fa-solid fa-phone"></i> +380 (50) XXX-XX-XX</li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
